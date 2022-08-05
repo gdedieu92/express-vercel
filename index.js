@@ -8,8 +8,8 @@ app.use(express.json({ extended: false }));
 app.use("/api/product", product);
 
 
-var APP_ID = process.env.APP_ID;
-var APP_CERTIFICATE = process.env.APP_CERTIFICATE;
+var APP_ID = '3390ec200ada4c26ba38ca8757d68ea3';
+var APP_CERTIFICATE = '060bcf1f768248459fef5e4253af9ec0';
 
 function nocache(req, res, next) {
     res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
