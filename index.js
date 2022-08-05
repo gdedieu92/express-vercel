@@ -22,7 +22,7 @@ var generateAccessToken = function (req, resp) {
     resp.header('Access-Control-Allow-Origin', "*")
 
     var channel = req.query.channel;
-    if (!channel) return resp.status(500).json({ 'error': 'channel name is required' });
+    if (!channel) return resp.status(500).json({ 'error': 'channel name is required', APP_ID, APP_CERTIFICATE });
     var uid = req.query.uid;
     if (!uid) uid = 0;
     var expiredTs = req.query.expiredTs;
