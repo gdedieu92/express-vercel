@@ -4,10 +4,10 @@
   "description": "Deploy express js to vercel.",
   "main": "index.js",
   "engines": {
-    "node" : "14.x"
+    "node": "14.x"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "cross-env APP_ID=3390ec200ada4c26ba38ca8757d68ea3 APP_CERTIFICATE=060bcf1f768248459fef5e4253af9ec0 node index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/hatuanem199801/express-vercel#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "agora-access-token": "^2.0.4",
+    "cross-env": "^7.0.3"
   }
 }
